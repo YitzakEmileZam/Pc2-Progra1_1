@@ -1,0 +1,25 @@
+@model IEnumerable<BankApp.Models.BankAccount>
+
+<h2>Lista de Cuentas Bancarias</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre del Titular</th>
+            <th>Tipo de Cuenta</th>
+            <th>Saldo Inicial</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var account in Model)
+        {
+            <tr>
+                <td>@account.AccountHolderName</td>
+                <td>@account.AccountType</td>
+                <td>@account.InitialBalance</td>
+                <td>@account.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
