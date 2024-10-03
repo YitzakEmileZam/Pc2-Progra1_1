@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BankApp.Controllers
 {
-    [Route("[controller]")]
+    //[Route("[controller]")]
     public class BankAccountsController : Controller
     {
         //private readonly ILogger<BankAccountsController> _logger;
